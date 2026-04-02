@@ -4,7 +4,7 @@ import SpeakerCard from "../components/SpeakerCard";
 
 const EventDetails = () => {
   const { eventId } = useParams();
-  const { data, loading, error } = useFetch(`/api/events/${eventId}`, {});
+  const { data, loading, error } = useFetch(`/events/${eventId}`, {});
 
   if (loading) {
     return (

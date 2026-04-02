@@ -4,7 +4,7 @@ import FilterBar from "../components/FilterBar";
 import EventCard from "../components/EventCard";
 
 const Home = () => {
-  const { data, loading, error } = useFetch("/api/events", []);
+  const { data, loading, error } = useFetch("/events", []);
   const [searchTerm, setSearchTerm] = useState("");
   const [eventType, setEventType] = useState("Both");
 
